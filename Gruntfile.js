@@ -107,6 +107,21 @@ module.exports = function(grunt) {
       }
     },
 
+    // CriticalCSS
+    // -----------
+
+    // Vytahuje část CSS nad zlomem pro potřeby inlinování.
+
+    criticalcss: {
+        custom: {
+            options: {
+                url: "http://sites.localhost/skoleni/_examples/rwd_pokrocile_start_simplified/before.html",
+                outputfile: "dist/css/critical.css",
+                filename: "dist/css/style.css"
+            }
+        }
+    },
+
     // Javascript
     // ==========
 
