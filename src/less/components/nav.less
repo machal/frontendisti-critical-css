@@ -1,0 +1,87 @@
+/*
+
+--- Navigace ---
+
+*/
+
+.nav {
+  border-top: 1px solid #fff;
+  margin-bottom: 32px;
+  background: @color-dark;
+}
+
+.nav ul {
+  .clearfix;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// V tisku nezobrazujeme
+
+@media print {
+  .nav {
+    display: none;
+  }
+}
+
+// Polozka navigace: zakladna a male displeje
+
+.nav-item {
+  display: block;
+  border-bottom: 1px solid #fff;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+b .nav-item,
+.nav-item:hover,
+.nav-item:focus,
+.nav-item:active {
+  font-weight: normal;
+  color: #fff;
+}
+
+.nav li:last-child .nav-item {
+  border-bottom: none;
+}
+
+// Schovani na malych displejich
+
+.nav {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media only screen and (max-width: 599px) {
+    display: none;
+  }
+}
+
+
+// Layout pro siroke dipleje
+
+@media only screen and (min-width: 600px) {
+
+  .nav li {
+    width: 20%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    border-right: 1px solid #fff;
+    border-bottom: none;
+  }
+
+  .nav li:first-child .nav-item {
+    border-left: 1px solid #fff;
+  }
+
+}

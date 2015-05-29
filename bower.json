@@ -1,0 +1,20 @@
+{
+  "name": "space-news",
+  "version": "0.0.0",
+  "homepage": "https://github.com/machal/rwd-space-news-example",
+  "authors": [
+    "Martin Michálek <michalek@shortcat.cz>"
+  ],
+  "description": "Demo priklad pro skoleni responzivniho designu.",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

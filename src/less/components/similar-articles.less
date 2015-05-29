@@ -1,0 +1,62 @@
+/*
+
+--- Podobne clanky ---
+
+*/
+
+.similar-articles {
+	list-style-type: none;
+	margin: 0 0 24px;
+	padding: 0;
+}
+
+// Polozka podobnych clanku
+// ------------------------
+
+.similar-article {
+  font-size: @font-size-base * .75;
+  line-height: 1.4;
+	margin: 0 0 12px 0;
+	padding: 0;
+
+  p {
+    margin-bottom: @font-size-base * .75;
+  }
+}
+
+
+// Layout
+
+@media only screen and (min-width: 400px) {
+
+  .similar-article {
+    position: relative;
+    padding-left: percentage(1/4);
+
+    h3 {
+      margin-bottom: 0;
+    }
+  }
+
+  .similar-article-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: percentage(1/4.5);
+    width: calc(percentage(1/4) ~"- @{gutter}");
+  }
+
+}
+
+@media only screen and (min-width: 550px) {
+
+  .similar-article {
+    padding-left: percentage(1/6);
+  }
+
+  .similar-article-image {
+    width: percentage(1/6.5);
+    width: calc(percentage(1/6) ~"- @{gutter}");
+  }
+
+}

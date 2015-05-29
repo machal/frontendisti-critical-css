@@ -1,0 +1,26 @@
+/*
+
+--- Fotogalerie ---
+
+*/
+
+@content-width: 540px;
+
+.gallery {
+  .clearfix;
+}
+
+.gallery-item {
+	float: left;
+	width: percentage(170px / @content-width);
+	margin: 0 percentage(15px / @content-width) 15px 0;
+}
+
+.gallery-item a {
+	margin-bottom: 4px;
+}
+
+.gallery-item.last {
+  margin-right: 0;
+}
+

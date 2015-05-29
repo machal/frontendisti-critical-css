@@ -1,0 +1,45 @@
+/*
+
+--- Paticka webu ---
+
+*/
+
+
+.foot {
+  text-align: center;
+  margin-top: 48px;
+  clear: both;
+  padding: 16px 30px;
+  background-color: @color-dark;
+  color: white;
+}
+
+.foot h2 {
+	color: white;
+}
+
+// Ikony socialních siti
+
+.foot-socials h2 {
+  margin-bottom: @line-height-base;
+}
+
+.foot-socials-icon {
+  display: inline-block;
+  margin-left: @gutter/2;
+  opacity: .8;
+  transition: 200ms;
+  width: @line-height-base*2;
+  height: @line-height-base*2;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.foot-socials-icon:hover,
+.foot-socials-icon:focus,
+.foot-socials-icon:active {
+  opacity: 1;
+  transform: scale(1.1);
+}

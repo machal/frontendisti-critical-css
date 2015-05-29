@@ -1,0 +1,62 @@
+/*
+
+--- Textova zakladna: typografie a barvy ---
+
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body, input, textarea, select {
+  font: @font-size-base/@line-height-base Georgia, serif;
+  color: #2f2222;
+}
+
+p, ul, ol, blockquote, table, iframe {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 8px;
+  font-family: 'Exo', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.3;
+	color: #6f6666;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+a img {
+  border: 0;
+}
+
+a {
+  color: @color-primary;
+}
+
+// Vlastni fonty
+// -------------
+
+// Exo
+// http://www.fontsquirrel.com/fonts/exo
+
+@font-face {
+  font-family: 'Exo';
+  src: url('../fonts/exo/exo-bold-webfont.eot');
+  src: url('../fonts/exo/exo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/exo/exo-bold-webfont.woff2') format('woff2'),
+       url('../fonts/exo/exo-bold-webfont.woff') format('woff'),
+       url('../fonts/exo/exo-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,61 @@
+/*
+
+--- Hlavicka webu ---
+
+*/
+
+// Horni plocha hlavicky s logem a jitrenkou na pozadi
+
+.head {
+  .clearfix;
+	background:
+    @color-dark
+		url('../img/bitmap/head_aurora_small.jpg')
+		no-repeat center center;
+	background-size: cover;
+	padding: @line-height-base @gutter;
+
+  @media
+    only screen and (min-width: 1000px),
+    only screen and (min-width: 500px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width: 500px) and (min-resolution: 192dpi) {
+      background-image: url('../img/bitmap/head_aurora_medium.jpg')
+  }
+
+  @media
+    only screen and (min-width: 2000px),
+    only screen and (min-width: 1000px) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-width: 1000px) and (min-resolution: 192dpi) {
+      background-image: url('../img/bitmap/head_aurora_large.jpg')
+  }
+
+  .old-ie & {
+    background-image: url('../img/bitmap/head_aurora_large.jpg');
+  }
+
+}
+
+
+
+// Logotyp
+
+.head-logo {
+	margin-bottom: 0;
+  float: left;
+}
+
+
+// Hamburger menu ikony
+
+.head-hamburger {
+  display: inline-block;
+  float: right;
+
+  @media only screen and (min-width: @full-nav-start) {
+    display: none;
+  }
+}
+
+
+
+
