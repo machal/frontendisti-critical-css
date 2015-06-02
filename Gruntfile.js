@@ -142,6 +142,15 @@ module.exports = function(grunt) {
       script: {
           src: 'dist/js/script.js',
           dest: 'dist/js/script.min.js'
+      },
+      lib: {
+          expand: true,
+          cwd: 'src/js/lib/',
+          src: ['*.js'],
+          dest: 'dist/js/lib/',
+          rename: function(dest, src) {
+            return dest + src.replace(/\.js$/, ".min.js");
+          }
       }
     },
 
@@ -194,6 +203,6 @@ module.exports = function(grunt) {
 
   grunt.registerTask('css', ['less:default', 'autoprefixer', 'cssmin']);
   grunt.registerTask('js', ['browserify', 'uglify']);
-  grunt.registerTask('default', ['copy', 'css', 'js', 'browserSync', 'watch']);
+  grunt.registerTask('default', ['copy', 'css', 'criticalcss', 'js', 'browserSync', 'watch']);
 
 };
